@@ -81,10 +81,10 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
             self.viewModel.loadMoreIfNeeded(index: indexPath.item)
         }
         
-   /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             let detailViewController = DetailViewController(viewModel: self.viewModel, index: indexPath.item)
             self.present(detailViewController, animated: true, completion: nil)
-        }*/
+        }
     
 }
 

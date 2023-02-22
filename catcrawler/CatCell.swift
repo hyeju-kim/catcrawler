@@ -14,7 +14,7 @@ final class CatCell: UICollectionViewCell {
     
     private let service = ImageService.shared
     
-    private var task: URLSessionDataTask?
+    private var task: URLSessionDataTask? //현재 다운받고 있는 task를 셀에 저장
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,9 +40,9 @@ final class CatCell: UICollectionViewCell {
             
             
         ])
-        self.imageView.contentMode = .scaleAspectFill
-        self.imageView.backgroundColor = .cyan //잘 들어갔는지 배경색 넣기
-        self.imageView.contentMode = .scaleAspectFill //이미지가 꽉 차게 보임
+        
+        self.imageView.contentMode = .scaleAspectFill//이미지가 꽉 차게 보임
+        self.imageView.clipsToBounds = true //이미지가 나눈 클립의 크기에 맞춤
         
     }
     
@@ -50,7 +50,7 @@ final class CatCell: UICollectionViewCell {
         task?.cancel() //이전에 받아온 task가 있다면 cancel하고
         self.imageView.image = nil //이전에 담아두었던 이미지를 nil처리로 비움
         if detail {
-            self.imageView.contentMode = .scaleAspectFit
+            self.imageView.contentMode = .scaleAspectFit//디테일뷰에서 화면에 이미지가 크기 맞추는거
         }
         task = service.setImage(view: self.imageView, urlString: urlString)
         //오토레이아웃을 설정하는 코드

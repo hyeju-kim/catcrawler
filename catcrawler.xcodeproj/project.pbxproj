@@ -20,6 +20,7 @@
 		D365414F299FB2F5000BA387 /* CatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365414E299FB2F5000BA387 /* CatService.swift */; };
 		D365415129A5187B000BA387 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365415029A5187B000BA387 /* CatViewModel.swift */; };
 		D365415329A51E0B000BA387 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365415229A51E0B000BA387 /* ImageService.swift */; };
+		D365415529A644A8000BA387 /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365415429A644A8000BA387 /* DetailViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D365414E299FB2F5000BA387 /* CatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatService.swift; sourceTree = "<group>"; };
 		D365415029A5187B000BA387 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 		D365415229A51E0B000BA387 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		D365415429A644A8000BA387 /* DetailViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				D365414E299FB2F5000BA387 /* CatService.swift */,
 				D365415029A5187B000BA387 /* CatViewModel.swift */,
 				D365415229A51E0B000BA387 /* ImageService.swift */,
+				D365415429A644A8000BA387 /* DetailViewcontroller.swift */,
 			);
 			path = catcrawler;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				D365414F299FB2F5000BA387 /* CatService.swift in Sources */,
 				D365415129A5187B000BA387 /* CatViewModel.swift in Sources */,
 				D365415329A51E0B000BA387 /* ImageService.swift in Sources */,
+				D365415529A644A8000BA387 /* DetailViewcontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

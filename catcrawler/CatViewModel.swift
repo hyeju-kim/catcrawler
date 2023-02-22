@@ -23,7 +23,7 @@ final class CatViewModel {
     
     var data: [CatResponse] = []
     
-    private var delegates: [CatViewModelOutput] = []
+    private var delegates: [CatViewModelOutput] = [] //디테일뷰가 delegate(단수)를 사용해서 무한 스크롤이 안되는 문제를                                                      delegates(복수)로 사용함으로써 해결
     
     func attach(delegate: CatViewModelOutput) {
         self.delegates.append(delegate)
@@ -31,7 +31,7 @@ final class CatViewModel {
     
     func detach(delegate: CatViewModelOutput) {
         self.delegates = self.delegates.filter {
-            $0 !== delegate
+            $0 !== delegate // delegate의 주소값을 detach하는 함수
         }
     }
     
@@ -59,7 +59,7 @@ final class CatViewModel {
                     self.currentPage += 1 //한 페이지씩 추가하는 작업
                     self.delegates.forEach { $0.loadComplete() }
                 }
-                self.isLoading = false
+                self.isLoading = false //로딩 상태 풀기
             }
                 
         }
