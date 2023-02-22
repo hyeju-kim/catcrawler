@@ -8,5 +8,4 @@
 - 디테일뷰 만들기
 - 샤샤샥 효과 쓰기
 
-
-[화면 기록 2023-02-22 오후 10.15.11.mov.zip](https://github.com/hyeju-kim/catcrawler/files/10804268/2023-02-22.10.15.11.mov.zip)
+https://user-images.githubusercontent.com/79952915/220634003-5489588f-6577-4ce2-a3ac-9284a3769a02.mov
